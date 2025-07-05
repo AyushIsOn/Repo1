@@ -9,24 +9,44 @@ const galleryData = [
     title: "Avni Girls 1 Rooms",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Single room with study setup",
-        description: "Single room with natural light and personal study setup"
+        url: "/images/WhatsApp Image 2025-07-05 at 6.15.03 AM_1751727421470.jpeg",
+        alt: "Girls room interior",
+        description: "Comfortable room setup with personal space and modern amenities"
       },
       {
-        url: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Double sharing accommodation",
-        description: "Double sharing with individual lockers and study space"
+        url: "/images/WhatsApp Image 2025-07-05 at 6.15.02 AM_1751727425482.jpeg",
+        alt: "Room facilities",
+        description: "Well-organized room with storage and study facilities"
       },
       {
-        url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Modern bathroom facilities",
-        description: "Attached bathroom with modern fixtures and geyser"
+        url: "/images/WhatsApp Image 2025-07-05 at 6.15.00 AM_1751727429452.jpeg",
+        alt: "Living space arrangement",
+        description: "Clean and organized living space with proper ventilation"
       },
       {
-        url: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Common study area",
-        description: "Common area with comfortable seating and study tables"
+        url: "/images/20250705_111711_1751727472907.jpg",
+        alt: "Bathroom and outdoor access",
+        description: "Modern bathroom facilities with balcony access and greenery view"
+      },
+      {
+        url: "/images/20250705_111434_1751727492174.jpg",
+        alt: "Building courtyard view",
+        description: "Courtyard area with green spaces and recreational facilities"
+      },
+      {
+        url: "/images/20250705_111415_1751727496435.jpg",
+        alt: "Rooftop garden area",
+        description: "Beautiful rooftop garden with plants and peaceful environment"
+      },
+      {
+        url: "/images/20250705_111302_1751727510189.jpg",
+        alt: "Kitchen and common facilities",
+        description: "Shared kitchen area with refrigerator, cooking facilities and water purifier"
+      },
+      {
+        url: "/images/2021-08-02_1751727639668.jpg",
+        alt: "Building corridor and entrance",
+        description: "Clean corridors with modern stairs and well-maintained common areas"
       }
     ]
   },
