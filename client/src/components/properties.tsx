@@ -7,7 +7,7 @@ const properties = [
     name: "Avni Girls 1",
     description: "Premium accommodation for female students with modern amenities and 24/7 security.",
     capacity: "Female Only",
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+    image: "/images/2023-07-14_1751728409526.jpg"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const properties = [
     name: "Avni Boys",
     description: "Comfortable accommodation for male students with all necessary facilities and study environment.",
     capacity: "Male Only",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+    image: "/images/20250705_113142_1751728478634.jpg"
   }
 ];
 
@@ -39,7 +39,7 @@ export default function Properties() {
         <div className="grid md:grid-cols-3 gap-8">
           {properties.map((property) => (
             <Card key={property.id} className="overflow-hidden border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[3/4] overflow-hidden">
                 <img 
                   src={property.image} 
                   alt={`${property.name} Building`}
