@@ -106,6 +106,7 @@ Changelog:
 - July 05, 2025: Added authentic photos for Avni Girls 2 gallery section
 - July 05, 2025: Added authentic photos for Avni Girls 1 gallery section
 - July 05, 2025: Replaced Google Maps placeholder with actual location map showing all three buildings
+- July 05, 2025: Added distance and time information to key places in Jhansi below location section
 ```
 
 ## User Preferences

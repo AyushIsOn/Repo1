@@ -63,6 +63,51 @@ export default function Location() {
             </div>
           </div>
         </div>
+        
+        {/* Distance and Time to Key Places */}
+        <div className="mt-20">
+          <h3 className="text-3xl font-bold text-neutral-900 mb-8 text-center">
+            Distance to Key Places in Jhansi
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="overflow-hidden border-0 shadow-sm">
+              <CardContent className="p-0">
+                <img 
+                  src="/images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.jpeg"
+                  alt="Distance and time to key locations from Avni PG"
+                  className="w-full h-auto object-cover"
+                />
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden border-0 shadow-sm">
+              <CardContent className="p-0">
+                <img 
+                  src="/images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.jpeg"
+                  alt="Travel time to important places in Jhansi"
+                  className="w-full h-auto object-cover"
+                />
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden border-0 shadow-sm">
+              <CardContent className="p-0">
+                <img 
+                  src="/images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.jpeg"
+                  alt="Distance information to colleges and institutions"
+                  className="w-full h-auto object-cover"
+                />
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden border-0 shadow-sm">
+              <CardContent className="p-0">
+                <img 
+                  src="/images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.jpeg"
+                  alt="Travel times to shopping and commercial areas"
+                  className="w-full h-auto object-cover"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </section>
   );
