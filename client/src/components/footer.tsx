@@ -7,42 +7,42 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-neutral-900 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <h3 className="text-2xl font-bold">Avni PG</h3>
-            <p className="text-gray-400">Your Home Away From Home</p>
+    <footer className="bg-white border-t border-neutral-200 py-16">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+          <div className="mb-8 md:mb-0">
+            <h3 className="text-2xl font-bold text-neutral-900 mb-2">Avni PG</h3>
+            <p className="text-neutral-600">Your Home Away From Home</p>
           </div>
-          <div className="flex space-x-6">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
             <button 
               onClick={() => scrollToSection('properties')}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-neutral-600 hover:text-neutral-900 transition-colors text-left md:text-center"
             >
               Properties
             </button>
             <button 
               onClick={() => scrollToSection('rooms')}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-neutral-600 hover:text-neutral-900 transition-colors text-left md:text-center"
             >
               Rooms
             </button>
             <button 
               onClick={() => scrollToSection('amenities')}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-neutral-600 hover:text-neutral-900 transition-colors text-left md:text-center"
             >
               Amenities
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-neutral-600 hover:text-neutral-900 transition-colors text-left md:text-center"
             >
               Contact
             </button>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; 2024 Avni PG Hostel. All rights reserved. | Shivaji Nagar, Jhansi, Uttar Pradesh</p>
+        <div className="pt-8 border-t border-neutral-200 text-center text-neutral-500">
+          <p>&copy; 2025 Avni PG Hostel. All rights reserved. | Shivaji Nagar, Jhansi, Uttar Pradesh</p>
         </div>
       </div>
     </footer>

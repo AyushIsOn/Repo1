@@ -35,47 +35,44 @@ export default function Rooms() {
   };
 
   return (
-    <section id="rooms" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Choose the Room That Suits You Best
+    <section id="rooms" className="py-20 bg-neutral-50">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Choose Your Space
           </h2>
-          <p className="text-lg text-neutral-500">
-            Comfortable accommodation options for every preference and budget
+          <p className="text-xl text-neutral-600 max-w-2xl">
+            Comfortable accommodation options designed for every preference and budget.
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           {roomTypes.map((room) => (
-            <Card key={room.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="aspect-video overflow-hidden">
+            <Card key={room.id} className="overflow-hidden border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={room.image} 
                   alt={room.name}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-neutral-900">{room.name}</h3>
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${
-                    room.id === 1 ? 'bg-primary' : 
-                    room.id === 2 ? 'bg-secondary' : 'bg-accent'
-                  }`}>
+              <CardContent className="p-8">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl font-semibold text-neutral-900">{room.name}</h3>
+                  <span className="px-4 py-2 rounded-full text-sm font-medium bg-neutral-900 text-white">
                     {room.occupancy}
                   </span>
                 </div>
-                <p className="text-neutral-500 mb-4">{room.description}</p>
+                <p className="text-neutral-600 mb-6 leading-relaxed">{room.description}</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-neutral-500">
-                    <Bed className="w-4 h-4 mr-1" />
+                    <Bed className="w-4 h-4 mr-2" />
                     <span>{room.type}</span>
                   </div>
                   <Button 
                     onClick={handleInquire}
                     variant="ghost"
-                    className="text-primary hover:text-blue-700 font-medium p-0"
+                    className="text-neutral-900 hover:text-neutral-700 font-medium p-0"
                   >
                     Inquire Now
                   </Button>

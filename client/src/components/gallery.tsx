@@ -96,40 +96,38 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Peek Inside Our Rooms</h2>
-          <p className="text-lg text-neutral-500">
-            View photos of rooms from each building with their facilities
+    <section id="gallery" className="py-20 bg-neutral-50">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">See Inside</h2>
+          <p className="text-xl text-neutral-600 max-w-2xl">
+            Take a closer look at our rooms, facilities, and the comfortable environment we provide.
           </p>
         </div>
         
-        <div className="space-y-12">
+        <div className="space-y-16">
           {galleryData.map((section) => (
-            <Card key={section.id} className="bg-neutral-50 border-0">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-neutral-900 mb-6">{section.title}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {section.images.map((image, index) => (
-                    <div key={index} className="relative group cursor-pointer">
-                      <div 
-                        className="aspect-square overflow-hidden rounded-lg"
-                        onClick={() => openLightbox(image)}
-                      >
-                        <img 
-                          src={image.url} 
-                          alt={image.alt}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg"></div>
-                      </div>
-                      <p className="text-sm text-neutral-600 mt-2">{image.description}</p>
+            <div key={section.id}>
+              <h3 className="text-3xl font-bold text-neutral-900 mb-8">{section.title}</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {section.images.map((image, index) => (
+                  <div key={index} className="relative group cursor-pointer">
+                    <div 
+                      className="aspect-square overflow-hidden rounded-lg"
+                      onClick={() => openLightbox(image)}
+                    >
+                      <img 
+                        src={image.url} 
+                        alt={image.alt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg"></div>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-sm text-neutral-600 mt-3 leading-relaxed">{image.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

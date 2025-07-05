@@ -119,14 +119,14 @@ const amenities = [
 
 export default function Amenities() {
   return (
-    <section id="amenities" className="py-16 bg-neutral-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            What You Get With Your Stay
+    <section id="amenities" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Everything You Need
           </h2>
-          <p className="text-lg text-neutral-500">
-            All essential amenities included for a comfortable living experience
+          <p className="text-xl text-neutral-600 max-w-2xl">
+            All essential amenities included for a comfortable and convenient living experience.
           </p>
         </div>
         
@@ -134,13 +134,13 @@ export default function Amenities() {
           {amenities.map((amenity) => {
             const IconComponent = amenity.icon;
             return (
-              <Card key={amenity.id} className="text-center hover:shadow-md transition-shadow duration-300">
+              <Card key={amenity.id} className="text-center border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <div className={`${amenity.color} text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4`}>
-                    <IconComponent className="w-8 h-8" />
+                  <div className="bg-neutral-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-neutral-900" />
                   </div>
                   <h3 className="font-semibold text-neutral-900 mb-2">{amenity.name}</h3>
-                  <p className="text-sm text-neutral-500">{amenity.description}</p>
+                  <p className="text-sm text-neutral-600">{amenity.description}</p>
                 </CardContent>
               </Card>
             );

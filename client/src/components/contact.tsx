@@ -7,64 +7,62 @@ export default function Contact() {
   const whatsappUrl = `https://wa.me/919795204621?text=${whatsappMessage}`;
 
   return (
-    <section id="contact" className="py-16 bg-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Book Your Seat Today!</h2>
-          <p className="text-lg text-blue-100">Get in touch with us to secure your comfortable stay</p>
+    <section id="contact" className="py-20 bg-neutral-900">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Move In?</h2>
+          <p className="text-xl text-neutral-300 max-w-2xl">
+            Get in touch with us to secure your comfortable stay at Avni PG.
+          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Card className="bg-white bg-opacity-10 backdrop-blur-sm border-0">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Address</p>
-                    <p className="text-blue-100">Shivaji Nagar, Jhansi, Uttar Pradesh</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Phone Numbers</p>
-                    <p className="text-blue-100">
-                      <a href="tel:+919795204621" className="hover:text-white transition-colors">
-                        +91 97952 04621
-                      </a>
-                    </p>
-                    <p className="text-blue-100">
-                      <a href="tel:+918318010062" className="hover:text-white transition-colors">
-                        +91 83180 10062
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center">
-                    <User className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Contact Person</p>
-                    <p className="text-blue-100">Subhash Gupta</p>
-                  </div>
-                </div>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="space-y-8">
+            <div className="flex items-start space-x-4">
+              <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-6 h-6 text-neutral-900" />
               </div>
-            </CardContent>
-          </Card>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Address</h3>
+                <p className="text-neutral-300 leading-relaxed">
+                  Shivaji Nagar, Jhansi, Uttar Pradesh
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                <Phone className="w-6 h-6 text-neutral-900" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Phone Numbers</h3>
+                <p className="text-neutral-300 leading-relaxed">
+                  <a href="tel:+919795204621" className="hover:text-white transition-colors">
+                    +91 97952 04621
+                  </a>
+                  <br />
+                  <a href="tel:+918318010062" className="hover:text-white transition-colors">
+                    +91 83180 10062
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                <User className="w-6 h-6 text-neutral-900" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Contact Person</h3>
+                <p className="text-neutral-300 leading-relaxed">Subhash Gupta</p>
+              </div>
+            </div>
+          </div>
           
           <div className="space-y-4">
             <Button 
               asChild
-              className="bg-secondary hover:bg-amber-500 text-white px-8 py-4 text-lg font-semibold w-full"
+              className="bg-white text-neutral-900 hover:bg-neutral-100 px-8 py-4 text-lg font-medium w-full rounded-full"
             >
               <a href="tel:+919795204621">
                 <Phone className="w-5 h-5 mr-3" />
@@ -74,7 +72,7 @@ export default function Contact() {
             
             <Button 
               asChild
-              className="bg-accent hover:bg-green-600 text-white px-8 py-4 text-lg font-semibold w-full"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-medium w-full rounded-full"
             >
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp mr-3"></i>
@@ -85,7 +83,7 @@ export default function Contact() {
             <Button 
               asChild
               variant="outline"
-              className="bg-white bg-opacity-20 hover:bg-opacity-30 border-white text-white px-8 py-4 text-lg font-semibold w-full"
+              className="border-neutral-600 text-neutral-300 hover:bg-neutral-800 hover:text-white px-8 py-4 text-lg font-medium w-full rounded-full"
             >
               <a href="tel:+918318010062">
                 <Phone className="w-5 h-5 mr-3" />

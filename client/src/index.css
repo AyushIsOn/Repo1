@@ -4,28 +4,35 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(222, 84%, 5%);
-  --muted: hsl(210, 40%, 96%);
-  --muted-foreground: hsl(215, 16%, 47%);
+  --foreground: hsl(0, 0%, 9%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 45%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(0, 0%, 9%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 84%, 5%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
-  --primary: hsl(221, 83%, 53%);
-  --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(45, 93%, 47%);
-  --secondary-foreground: hsl(222, 84%, 5%);
-  --accent: hsl(142, 76%, 36%);
-  --accent-foreground: hsl(355, 7%, 97%);
+  --card-foreground: hsl(0, 0%, 9%);
+  --border: hsl(0, 0%, 89%);
+  --input: hsl(0, 0%, 89%);
+  --primary: hsl(0, 0%, 9%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 96%);
+  --secondary-foreground: hsl(0, 0%, 9%);
+  --accent: hsl(0, 0%, 96%);
+  --accent-foreground: hsl(0, 0%, 9%);
   --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(222, 84%, 5%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 0%, 63%);
   --radius: 0.5rem;
-  --neutral-50: hsl(210, 40%, 98%);
-  --neutral-500: hsl(215, 16%, 47%);
-  --neutral-900: hsl(222, 84%, 5%);
+  --neutral-50: hsl(0, 0%, 98%);
+  --neutral-100: hsl(0, 0%, 96%);
+  --neutral-200: hsl(0, 0%, 89%);
+  --neutral-300: hsl(0, 0%, 83%);
+  --neutral-400: hsl(0, 0%, 64%);
+  --neutral-500: hsl(0, 0%, 45%);
+  --neutral-600: hsl(0, 0%, 32%);
+  --neutral-700: hsl(0, 0%, 25%);
+  --neutral-800: hsl(0, 0%, 15%);
+  --neutral-900: hsl(0, 0%, 9%);
 }
 
 .dark {
@@ -69,11 +76,30 @@
   .text-neutral-50 {
     color: var(--neutral-50);
   }
-  
+  .text-neutral-100 {
+    color: var(--neutral-100);
+  }
+  .text-neutral-200 {
+    color: var(--neutral-200);
+  }
+  .text-neutral-300 {
+    color: var(--neutral-300);
+  }
+  .text-neutral-400 {
+    color: var(--neutral-400);
+  }
   .text-neutral-500 {
     color: var(--neutral-500);
   }
-  
+  .text-neutral-600 {
+    color: var(--neutral-600);
+  }
+  .text-neutral-700 {
+    color: var(--neutral-700);
+  }
+  .text-neutral-800 {
+    color: var(--neutral-800);
+  }
   .text-neutral-900 {
     color: var(--neutral-900);
   }
@@ -81,11 +107,30 @@
   .bg-neutral-50 {
     background-color: var(--neutral-50);
   }
-  
+  .bg-neutral-100 {
+    background-color: var(--neutral-100);
+  }
+  .bg-neutral-200 {
+    background-color: var(--neutral-200);
+  }
+  .bg-neutral-300 {
+    background-color: var(--neutral-300);
+  }
+  .bg-neutral-400 {
+    background-color: var(--neutral-400);
+  }
   .bg-neutral-500 {
     background-color: var(--neutral-500);
   }
-  
+  .bg-neutral-600 {
+    background-color: var(--neutral-600);
+  }
+  .bg-neutral-700 {
+    background-color: var(--neutral-700);
+  }
+  .bg-neutral-800 {
+    background-color: var(--neutral-800);
+  }
   .bg-neutral-900 {
     background-color: var(--neutral-900);
   }

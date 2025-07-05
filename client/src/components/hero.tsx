@@ -9,25 +9,29 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gradient-to-r from-primary to-blue-600 text-white">
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to Avni PG</h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
-            A Comfortable Stay for Students & Working Professionals in Jhansi
+    <section className="bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
+        <div className="max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 mb-8 leading-tight">
+            Find your perfect
+            <br />
+            <span className="text-neutral-600">home away from home.</span>
+          </h1>
+          <p className="text-xl text-neutral-600 mb-12 max-w-2xl">
+            Premium PG accommodation in Shivaji Nagar, Jhansi. Comfortable rooms, 
+            modern amenities, and a community that feels like family.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               onClick={() => scrollToSection('properties')}
-              className="bg-secondary hover:bg-amber-500 text-white px-8 py-3 text-lg font-semibold"
+              className="bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-4 text-lg font-medium rounded-full"
             >
               Explore Properties
             </Button>
             <Button 
               asChild
               variant="outline"
-              className="bg-white text-primary hover:bg-gray-100 border-white px-8 py-3 text-lg font-semibold"
+              className="border-neutral-300 text-neutral-900 hover:bg-neutral-100 px-8 py-4 text-lg font-medium rounded-full"
             >
               <a href="tel:+919795204621">Book Your Stay</a>
             </Button>

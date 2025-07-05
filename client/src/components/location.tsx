@@ -3,60 +3,62 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Location() {
   return (
-    <section id="location" className="py-16 bg-neutral-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Find Us Easily!</h2>
-          <p className="text-lg text-neutral-500">Located in the heart of Shivaji Nagar, Jhansi</p>
+    <section id="location" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Prime Location</h2>
+          <p className="text-xl text-neutral-600 max-w-2xl">
+            Located in the heart of Shivaji Nagar, Jhansi with easy access to everything you need.
+          </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <Card className="overflow-hidden">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <Card className="overflow-hidden border-0 shadow-sm">
             <CardContent className="p-0">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
+              <div className="h-80 bg-neutral-100 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-neutral-500 text-lg">Interactive Google Maps</p>
-                  <p className="text-sm text-neutral-400">Showing all three buildings</p>
-                  <p className="text-xs text-neutral-400 mt-2">Shivaji Nagar, Jhansi, Uttar Pradesh</p>
+                  <MapPin className="w-16 h-16 text-neutral-900 mx-auto mb-4" />
+                  <p className="text-neutral-900 text-lg font-medium">Interactive Google Maps</p>
+                  <p className="text-sm text-neutral-600">Showing all three buildings</p>
+                  <p className="text-xs text-neutral-500 mt-2">Shivaji Nagar, Jhansi, Uttar Pradesh</p>
                 </div>
               </div>
             </CardContent>
           </Card>
           
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div className="flex items-start space-x-4">
-              <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div className="bg-neutral-900 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-semibold text-neutral-900 mb-1">Prime Location</h3>
-                <p className="text-neutral-500">
-                  Strategically located in Shivaji Nagar with easy access to colleges, markets, and transportation.
+                <h3 className="text-xl font-semibold text-neutral-900 mb-2">Strategic Location</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Perfectly positioned in Shivaji Nagar with easy access to colleges, markets, and transportation hubs.
                 </p>
               </div>
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-secondary text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div className="bg-neutral-900 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                 <Bus className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-semibold text-neutral-900 mb-1">Well Connected</h3>
-                <p className="text-neutral-500">
-                  Close to bus stops and auto-rickshaw stands for convenient daily commuting.
+                <h3 className="text-xl font-semibold text-neutral-900 mb-2">Well Connected</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Close to bus stops and auto-rickshaw stands for convenient daily commuting throughout the city.
                 </p>
               </div>
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-accent text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div className="bg-neutral-900 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                 <ShoppingCart className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-semibold text-neutral-900 mb-1">Nearby Facilities</h3>
-                <p className="text-neutral-500">
-                  Walking distance to grocery stores, medical facilities, and dining options.
+                <h3 className="text-xl font-semibold text-neutral-900 mb-2">Essential Amenities</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Walking distance to grocery stores, medical facilities, restaurants, and daily necessities.
                 </p>
               </div>
             </div>
