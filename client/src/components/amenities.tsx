@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { ProtectedImage } from "@/components/ui/protected-image";
 import { 
   UtensilsCrossed, 
   Bed, 
@@ -14,7 +15,8 @@ import {
   Thermometer,
   Battery,
   Wifi,
-  Camera
+  Camera,
+  TreePine
 } from "lucide-react";
 
 const amenities = [
@@ -129,6 +131,13 @@ const amenities = [
     description: "24/7 security monitoring",
     icon: Camera,
     color: "bg-accent"
+  },
+  {
+    id: 17,
+    name: "Access to Mandir & Park",
+    description: "Temple and park right behind the house",
+    icon: TreePine,
+    color: "bg-primary"
   }
 ];
 
@@ -149,6 +158,65 @@ export default function Amenities() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {amenities.map((amenity) => {
             const IconComponent = amenity.icon;
+            
+            // Special handling for CCTV Cameras to include image
+            if (amenity.id === 16) {
+              return (
+                <Card key={amenity.id} className="text-center border-0 shadow-sm hover:shadow-md transition-shadow duration-300 md:col-span-2">
+                  <CardContent className="p-6">
+                    <div className="grid md:grid-cols-2 gap-4 items-center">
+                      <div>
+                        <div className="bg-neutral-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                          <IconComponent className="w-8 h-8 text-neutral-900" />
+                        </div>
+                        <h3 className="font-semibold text-neutral-900 mb-2">{amenity.name}</h3>
+                        <p className="text-sm text-neutral-600">{amenity.description}</p>
+                      </div>
+                      <div>
+                        <ProtectedImage
+                          src="/images/cctv-new.jpg" 
+                          alt="CCTV Monitoring System" 
+                          className="rounded-lg w-full h-40 object-cover"
+                          watermark="Avni PG"
+                          disableRightClick={true}
+                          disableDownload={true}
+                        />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            }
+            
+            // Special handling for Mandir & Park to include image
+            if (amenity.id === 17) {
+              return (
+                <Card key={amenity.id} className="text-center border-0 shadow-sm hover:shadow-md transition-shadow duration-300 md:col-span-2">
+                  <CardContent className="p-6">
+                    <div className="grid md:grid-cols-2 gap-4 items-center">
+                      <div>
+                        <div className="bg-neutral-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                          <IconComponent className="w-8 h-8 text-neutral-900" />
+                        </div>
+                        <h3 className="font-semibold text-neutral-900 mb-2">{amenity.name}</h3>
+                        <p className="text-sm text-neutral-600">{amenity.description}</p>
+                      </div>
+                      <div>
+                        <ProtectedImage
+                          src="/images/mandir-park-correct.jpg" 
+                          alt="Temple and Park behind the PG house" 
+                          className="rounded-lg w-full h-40 object-cover"
+                          watermark="Avni PG"
+                          disableRightClick={true}
+                          disableDownload={true}
+                        />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            }
+            
             return (
               <Card key={amenity.id} className="text-center border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <CardContent className="p-6">

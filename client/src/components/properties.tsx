@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { ProtectedImage } from "@/components/ui/protected-image";
 import { Users, ArrowRight } from "lucide-react";
 
 const properties = [
@@ -26,6 +27,21 @@ const properties = [
 ];
 
 export default function Properties() {
+  const scrollToGallery = (propertyId: number) => {
+    const gallerySection = document.getElementById('gallery');
+    if (gallerySection) {
+      gallerySection.scrollIntoView({ behavior: 'smooth' });
+      
+      // Small delay to ensure scroll completes, then scroll to specific property
+      setTimeout(() => {
+        const propertyGallery = document.getElementById(`gallery-property-${propertyId}`);
+        if (propertyGallery) {
+          propertyGallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 500);
+    }
+  };
+
   return (
     <section id="properties" className="py-20 bg-neutral-50">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -40,10 +56,13 @@ export default function Properties() {
           {properties.map((property) => (
             <Card key={property.id} className="overflow-hidden border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-[3/4] overflow-hidden">
-                <img 
+                <ProtectedImage
                   src={property.image} 
                   alt={`${property.name} Building`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  watermark="Avni PG"
+                  disableRightClick={true}
+                  disableDownload={true}
                 />
               </div>
               <CardContent className="p-8">
@@ -54,7 +73,10 @@ export default function Properties() {
                     <Users className="w-4 h-4 mr-2" />
                     <span>{property.capacity}</span>
                   </div>
-                  <button className="text-neutral-900 hover:text-neutral-700 font-medium flex items-center">
+                  <button 
+                    className="text-neutral-900 hover:text-neutral-700 font-medium flex items-center"
+                    onClick={() => scrollToGallery(property.id)}
+                  >
                     View Details <ArrowRight className="w-4 h-4 ml-2" />
                   </button>
                 </div>

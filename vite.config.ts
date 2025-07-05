@@ -25,9 +25,11 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
+    assetsDir: "assets",
   },
+  base: process.env.NODE_ENV === "production" ? "/PgHostelTracker/" : "/",
   server: {
     fs: {
       strict: true,

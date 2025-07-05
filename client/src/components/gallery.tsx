@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ProtectedImage } from "@/components/ui/protected-image";
 import { X } from "lucide-react";
 
 const galleryData = [
@@ -157,7 +158,7 @@ export default function Gallery() {
         
         <div className="space-y-16">
           {galleryData.map((section) => (
-            <div key={section.id}>
+            <div key={section.id} id={`gallery-property-${section.id}`}>
               <h3 className="text-3xl font-bold text-neutral-900 mb-8">{section.title}</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {section.images.map((image, index) => (
@@ -166,10 +167,13 @@ export default function Gallery() {
                       className="aspect-square overflow-hidden rounded-lg"
                       onClick={() => openLightbox(image)}
                     >
-                      <img 
+                      <ProtectedImage
                         src={image.url} 
                         alt={image.alt}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        watermark="Avni PG"
+                        disableRightClick={true}
+                        disableDownload={true}
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg"></div>
                     </div>
@@ -190,10 +194,13 @@ export default function Gallery() {
           </DialogHeader>
           {selectedImage && (
             <div className="relative">
-              <img 
+              <ProtectedImage
                 src={selectedImage.url} 
                 alt={selectedImage.alt}
                 className="w-full h-auto max-h-[80vh] object-contain"
+                watermark="Avni PG Hostel"
+                disableRightClick={true}
+                disableDownload={true}
               />
               <p className="text-center text-neutral-600 mt-4">{selectedImage.description}</p>
             </div>

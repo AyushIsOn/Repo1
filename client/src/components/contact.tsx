@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Contact Person</h3>
-                <p className="text-neutral-300 leading-relaxed">Subhash Gupta</p>
+                <p className="text-neutral-300 leading-relaxed">Subhash Gupta (Owner)</p>
               </div>
             </div>
           </div>
@@ -76,14 +76,14 @@ export default function Contact() {
             >
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp mr-3"></i>
-                WhatsApp Inquiry
+                Message to WhatsApp
               </a>
             </Button>
             
             <Button 
               asChild
               variant="outline"
-              className="border-neutral-600 text-neutral-300 hover:bg-neutral-800 hover:text-white px-8 py-4 text-lg font-medium w-full rounded-full"
+              className="border-neutral-700 text-white hover:bg-neutral-800 hover:text-white px-8 py-4 text-lg font-medium w-full rounded-full bg-neutral-700"
             >
               <a href="tel:+918318010062">
                 <Phone className="w-5 h-5 mr-3" />
