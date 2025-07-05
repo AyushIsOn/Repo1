@@ -1,0 +1,88 @@
+🌐 Website Content Prompt for Avni PG Hostel – Shivaji Nagar, Jhansi
+🏠 Homepage Title:
+
+Welcome to Avni PG – A Comfortable Stay for Students & Working Professionals in Jhansi
+
+🏢 Section 1: Our Properties
+
+Subheading:
+Explore Our Three Premium PG Buildings Located in Shivaji Nagar, Jhansi
+
+Content:
+
+Avni Girls 1
+Avni Girls 2
+Avni Boys
+Design Tip: Display this section with three separate cards or blocks, each with a name, short description, and thumbnail image.
+
+🗺️ Section 2: Location Map Integration
+
+Heading:
+Find Us Easily!
+
+Content:
+
+Show an embedded Google Maps view of Shivaji Nagar, Jhansi, with markers on each of the three buildings.
+Below that, display a screenshot/image from Google Maps showing all three buildings.
+🛏️ Section 3: Room Options
+
+Heading:
+Choose the Room That Suits You Best
+
+Content:
+
+Single Seater Room (Show photo)
+Double Sharing Room (Show photo)
+Triple Sharing Room (Show photo)
+Each room photo should be accompanied by a small caption such as:
+
+"Spacious and private single-seater with attached bathroom and study area."
+📋 Section 4: Amenities Provided
+
+Heading:
+What You Get With Your Stay
+
+Design Tip: Use a grid layout with icons + text for each amenity. Include a ✅ or small icons like 🍽️, 🛏️, 🚿, 📶, 🔌, etc.
+
+Amenities List:
+
+✅ Food – 3 Times a Day
+✅ Separate Beds
+✅ Personal Locker / Almirah
+✅ RO + UV Filtered Water
+✅ Common Kitchen
+✅ Attached Bathrooms
+✅ Study Tables & Chairs
+✅ Air Coolers
+✅ Mattress
+✅ Cleaning Services
+✅ Fridge
+✅ Geyser
+✅ Battery Backup (Inverter)
+✅ Wi-Fi (On Demand)
+🖼️ Section 5: Photo Gallery – Building-wise
+
+Heading:
+Peek Inside Our Rooms
+
+Subheading:
+View photos of rooms from each building with their facilities
+
+Content Layout:
+
+Avni Girls 1 Rooms
+4–5 images with small descriptions below each (e.g., “Twin-sharing room with natural light and personal study setup”)
+Avni Girls 2 Rooms
+Another gallery section with 4–5 room photos and amenities
+Avni Boys Rooms
+Gallery for boys’ PG with small captions (e.g., “Triple-sharing setup with locker, chair, and cooler”)
+📞 Contact Section (Footer)
+
+Heading:
+Book Your Seat Today!
+
+Content:
+
+📍 Address: Shivaji Nagar, Jhansi, Uttar Pradesh
+📞 Contact: Subhash Gupta – 9795204621, 8318010062
+📧 Optional: Add email or WhatsApp link
