@@ -21,23 +21,65 @@ export function ProtectedImage({
   watermark,
   ...props 
 }: ProtectedImageProps) {
-  const [imgSrc, setImgSrc] = useState(src);
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
+  // Get the base path for GitHub Pages
+  const basePath = import.meta.env.PROD ? '/Hostel' : '';
+  
+  const [imgSrc, setImgSrc] = useState(() => {
+    // Convert image path to WebP if available and add base path
+    const getWebPSrc = (originalSrc: string) => {
+      // If already has base path, don't add it again
+      if (originalSrc.startsWith(basePath)) {
+        if (originalSrc.includes('/images/webp/')) return originalSrc;
+        
+        const webpSrc = originalSrc.replace(
+          /\/images\/([^/]+)\.(jpg|jpeg|png)$/i, 
+          '/images/webp/$1.webp'
+        );
+        return webpSrc;
+      }
+      
+      // Add base path and convert to WebP
+      const withBasePath = `${basePath}${originalSrc}`;
+      if (withBasePath.includes('/images/webp/')) return withBasePath;
+      
+      const webpSrc = withBasePath.replace(
+        /\/images\/([^/]+)\.(jpg|jpeg|png)$/i, 
+        '/images/webp/$1.webp'
+      );
+      return webpSrc;
+    };
+    return getWebPSrc(src);
+  });
+  const [isLoading, setIsLoading] = useState(true);  const [hasError, setHasError] = useState(false);
 
-  // Convert image path to use webp-images folder
+  // Convert image path to WebP if available and add base path
   const getWebPSrc = (originalSrc: string) => {
-    // If it's already a webp-images path, return as is
-    if (originalSrc.includes('/webp-images/')) {
-      return originalSrc;
+    // If already has base path, don't add it again
+    if (originalSrc.startsWith(basePath)) {
+      if (originalSrc.includes('/images/webp/')) return originalSrc;
+      
+      const webpSrc = originalSrc.replace(
+        /\/images\/([^/]+)\.(jpg|jpeg|png)$/i, 
+        '/images/webp/$1.webp'
+      );
+      return webpSrc;
     }
     
-    // Convert /images/filename.ext to /webp-images/filename.webp
-    const webpSrc = originalSrc
-      .replace('/images/', '/webp-images/')
-      .replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    // Add base path and convert to WebP
+    const withBasePath = `${basePath}${originalSrc}`;
+    if (withBasePath.includes('/images/webp/')) return withBasePath;
     
+    const webpSrc = withBasePath.replace(
+      /\/images\/([^/]+)\.(jpg|jpeg|png)$/i, 
+      '/images/webp/$1.webp'
+    );
     return webpSrc;
+  };
+
+  const getOriginalSrc = (originalSrc: string) => {
+    // Add base path if not already present
+    if (originalSrc.startsWith(basePath)) return originalSrc;
+    return `${basePath}${originalSrc}`;
   };
 
   const handleImageLoad = () => {
@@ -50,10 +92,9 @@ export function ProtectedImage({
     setHasError(true);
     
     // Try fallback to original format if WebP fails
-    if (imgSrc.includes('/webp-images/')) {
-      const originalSrc = imgSrc
-        .replace('/webp-images/', '/images/')
-        .replace('.webp', '.jpg');
+    if (imgSrc.includes('.webp')) {
+      const originalPath = src; // Use the original src prop
+      const originalSrc = getOriginalSrc(originalPath);
       setImgSrc(fallbackSrc || originalSrc);
     }
   };
