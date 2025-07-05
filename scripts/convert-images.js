@@ -1,62 +1,62 @@
-#!/usr/bin/env node
-
-import sharp from 'sharp';
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'path';
+import sharp from 'sharp';
+import { fileURLToPath } from 'url';
 
-const inputDir = './client/public/images';
-const outputDir = './client/public/images/webp';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// Create output directory if it doesn't exist
-async function ensureDir(dir) {
-  try {
-    await fs.access(dir);
-  } catch {
-    await fs.mkdir(dir, { recursive: true });
-  }
+const inputDir = path.join(__dirname, '../client/public/images');
+const outputDir = path.join(__dirname, '../client/public/images/webp');
+
+// Create webp directory if it doesn't exist
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// Convert image to WebP
-async function convertToWebP(inputPath, outputPath) {
+async function convertToWebP() {
   try {
-    await sharp(inputPath)
-      .webp({ 
-        quality: 85, // Good balance between quality and size
-        effort: 6    // Higher effort = better compression
-      })
-      .toFile(outputPath);
-    
-    const inputStats = await fs.stat(inputPath);
-    const outputStats = await fs.stat(outputPath);
-    const reduction = ((inputStats.size - outputStats.size) / inputStats.size * 100).toFixed(1);
-    
-    console.log(`✅ ${path.basename(inputPath)} → ${path.basename(outputPath)} (${reduction}% smaller)`);
+    const files = fs.readdirSync(inputDir);
+    const imageFiles = files.filter(file => 
+      /\.(jpg|jpeg|png)$/i.test(file) && !file.startsWith('.')
+    );
+
+    console.log(`🔄 Converting ${imageFiles.length} images to WebP...`);
+
+    for (const file of imageFiles) {
+      const inputPath = path.join(inputDir, file);
+      const outputFileName = file.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+      const outputPath = path.join(outputDir, outputFileName);
+
+      // Skip if WebP version already exists and is newer
+      if (fs.existsSync(outputPath)) {
+        const inputStat = fs.statSync(inputPath);
+        const outputStat = fs.statSync(outputPath);
+        if (outputStat.mtime > inputStat.mtime) {
+          console.log(`⏭️  Skipping ${file} (WebP version is up to date)`);
+          continue;
+        }
+      }
+
+      const inputStats = fs.statSync(inputPath);
+      const inputSize = inputStats.size;
+
+      await sharp(inputPath)
+        .webp({ quality: 80 })
+        .toFile(outputPath);
+
+      const outputStats = fs.statSync(outputPath);
+      const outputSize = outputStats.size;
+      const reduction = ((inputSize - outputSize) / inputSize * 100).toFixed(1);
+
+      console.log(`✅ ${file} → ${outputFileName} (${reduction}% smaller)`);
+    }
+
+    console.log('🎉 Image conversion completed!');
   } catch (error) {
-    console.error(`❌ Error converting ${inputPath}:`, error.message);
+    console.error('❌ Error converting images:', error);
+    process.exit(1);
   }
 }
 
-// Main conversion function
-async function convertImages() {
-  await ensureDir(outputDir);
-  
-  const files = await fs.readdir(inputDir);
-  const imageFiles = files.filter(file => 
-    /\.(jpg|jpeg|png)$/i.test(file)
-  );
-  
-  console.log(`🔄 Converting ${imageFiles.length} images to WebP...`);
-  
-  for (const file of imageFiles) {
-    const inputPath = path.join(inputDir, file);
-    const outputName = file.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-    const outputPath = path.join(outputDir, outputName);
-    
-    await convertToWebP(inputPath, outputPath);
-  }
-  
-  console.log(`\n🎉 Conversion complete! Images saved to ${outputDir}`);
-  console.log(`📝 Don't forget to update your component imports to use .webp files`);
-}
-
-convertImages().catch(console.error);
+convertToWebP();
