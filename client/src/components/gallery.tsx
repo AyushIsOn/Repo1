@@ -61,24 +61,34 @@ const galleryData = [
     title: "Avni Boys Rooms",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1631947430066-48c30d57b943?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Boys triple sharing room",
-        description: "Triple sharing with lockers, chairs, and cooler"
+        url: "/attached_assets/20250705_103605_1751716360876.jpg",
+        alt: "Spacious boys room with study area",
+        description: "Well-lit room with study desk, wardrobe, and comfortable living space"
       },
       {
-        url: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Double sharing boys room",
-        description: "Double sharing with study tables and storage"
+        url: "/attached_assets/20250705_103901_1751716360877.jpg",
+        alt: "Boys room with bed and storage",
+        description: "Individual bed setup with personal storage and study chair"
       },
       {
-        url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Boys bathroom facilities",
-        description: "Clean bathroom with hot water and modern fixtures"
+        url: "/attached_assets/20250705_103916_1751716360877.jpg",
+        alt: "Multi-bed boys accommodation",
+        description: "Multiple bed arrangement with personal wardrobes and study areas"
       },
       {
-        url: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Common area for boys",
-        description: "Common area with seating and recreational space"
+        url: "/attached_assets/20250705_104258_1751716360877.jpg",
+        alt: "Boys room with shared facilities",
+        description: "Shared accommodation with individual beds and personal storage space"
+      },
+      {
+        url: "/attached_assets/20250705_104552_1751716360877.jpg",
+        alt: "Outdoor recreation area",
+        description: "Outdoor space with recreational facilities and green surroundings"
+      },
+      {
+        url: "/attached_assets/20250705_104754_1751716360877.jpg",
+        alt: "Modern boys room with amenities",
+        description: "Well-furnished room with modern amenities and comfortable living setup"
       }
     ]
   }
