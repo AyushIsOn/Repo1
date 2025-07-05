@@ -110,6 +110,16 @@ Changelog:
 - July 05, 2025: Added authentic exterior building image to Avni Girls 2 property card
 - July 05, 2025: Added authentic building images to Avni Girls 1 and Avni Boys properties, changed aspect ratio to portrait (3:4) to prevent cropping
 - July 05, 2025: Made distance to key places section responsive with carousel for mobile and grid for desktop
+- July 05, 2025: Major content and functionality updates:
+  • Updated hero section title to "Avni PG For Students and Working Professionals"
+  • Replaced "Book Your Stay" and "Explore Properties" buttons with "Call Now" and "WhatsApp" buttons
+  • Updated properties section description to emphasize same colony location with identical amenities
+  • Removed "Choose Your Space" (rooms) section from homepage
+  • Enhanced amenities section: added AC (On Demand), updated cleaning services to "Every alternative day", added CCTV cameras
+  • Updated amenities description to include "You would only need a pillow and bedsheet - rest all are provided"
+  • Added terrace image to Avni Boys gallery showing panoramic city view
+  • Added 3-seater room image to Avni Girls 1 gallery with park and mandir access description
+  • Implemented comprehensive fraud warning notice above footer alerting users about cyber fraudsters and fake Google Maps listings
 ```
 
 ## User Preferences

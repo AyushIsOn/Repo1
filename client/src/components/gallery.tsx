@@ -47,6 +47,11 @@ const galleryData = [
         url: "/images/2021-08-02_1751727639668.jpg",
         alt: "Building corridor and entrance",
         description: "Clean corridors with modern stairs and well-maintained common areas"
+      },
+      {
+        url: "/images/WhatsApp Image 2025-07-05 at 9.24.49 PM_1751731408158.jpeg",
+        alt: "3 seater room with attached bathroom",
+        description: "3 seater room with attached bathroom, geyser and direct access to the park with mandir"
       }
     ]
   },
@@ -118,7 +123,12 @@ const galleryData = [
       {
         url: "/images/20250705_104754_1751716360877.jpg",
         alt: "Modern boys room with amenities",
-        description: "Well-furnished room with modern amenities and comfortable living setup"
+        description: "Well-equipped room with modern facilities and comfortable living arrangement"
+      },
+      {
+        url: "/images/20250705_111513_1751731261770.jpg",
+        alt: "Terrace area with city view",
+        description: "Spacious terrace area with panoramic city view and outdoor space for relaxation"
       }
     ]
   }

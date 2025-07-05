@@ -32,7 +32,7 @@ export default function Properties() {
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Our Properties</h2>
           <p className="text-xl text-neutral-600 max-w-2xl">
-            Three premium PG buildings in Shivaji Nagar, each designed for comfort and community.
+            We have three properties located in the same colony, each offering the same amenities and comfort for your convenience.
           </p>
         </div>
         

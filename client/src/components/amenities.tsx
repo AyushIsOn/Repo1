@@ -13,7 +13,8 @@ import {
   Snowflake,
   Thermometer,
   Battery,
-  Wifi
+  Wifi,
+  Camera
 } from "lucide-react";
 
 const amenities = [
@@ -74,6 +75,13 @@ const amenities = [
     color: "bg-secondary"
   },
   {
+    id: 15,
+    name: "AC (On Demand)",
+    description: "Air conditioning available",
+    icon: Snowflake,
+    color: "bg-accent"
+  },
+  {
     id: 9,
     name: "Mattress",
     description: "Comfortable sleeping surface",
@@ -83,7 +91,7 @@ const amenities = [
   {
     id: 10,
     name: "Cleaning Services",
-    description: "Regular housekeeping",
+    description: "Every alternative day",
     icon: Fan,
     color: "bg-primary"
   },
@@ -114,6 +122,13 @@ const amenities = [
     description: "Internet connectivity",
     icon: Wifi,
     color: "bg-secondary"
+  },
+  {
+    id: 16,
+    name: "CCTV Cameras",
+    description: "24/7 security monitoring",
+    icon: Camera,
+    color: "bg-accent"
   }
 ];
 
@@ -126,7 +141,8 @@ export default function Amenities() {
             Everything You Need
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl">
-            All essential amenities included for a comfortable and convenient living experience.
+            All essential amenities included for a comfortable and convenient living experience. 
+            You would only need a pillow and a bedsheet - rest all are provided.
           </p>
         </div>
         
