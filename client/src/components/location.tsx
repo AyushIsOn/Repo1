@@ -15,13 +15,12 @@ export default function Location() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <Card className="overflow-hidden border-0 shadow-sm">
             <CardContent className="p-0">
-              <div className="h-80 bg-neutral-100 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-neutral-900 mx-auto mb-4" />
-                  <p className="text-neutral-900 text-lg font-medium">Interactive Google Maps</p>
-                  <p className="text-sm text-neutral-600">Showing all three buildings</p>
-                  <p className="text-xs text-neutral-500 mt-2">Shivaji Nagar, Jhansi, Uttar Pradesh</p>
-                </div>
+              <div className="h-80 overflow-hidden">
+                <img 
+                  src="/images/Girls - 1_1751727828946.png" 
+                  alt="Google Maps showing locations of all three Avni PG buildings"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </CardContent>
           </Card>
