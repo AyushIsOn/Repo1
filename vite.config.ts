@@ -29,7 +29,7 @@ export default defineConfig({
     emptyOutDir: true,
     assetsDir: "assets",
   },
-  base: process.env.NODE_ENV === "production" ? "/PgHostelTracker/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/Hostel/" : "/",
   server: {
     fs: {
       strict: true,
