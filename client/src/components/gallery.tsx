@@ -61,32 +61,32 @@ const galleryData = [
     title: "Avni Boys Rooms",
     images: [
       {
-        url: "/attached_assets/20250705_103605_1751716360876.jpg",
+        url: "/images/20250705_103605_1751716360876.jpg",
         alt: "Spacious boys room with study area",
         description: "Well-lit room with study desk, wardrobe, and comfortable living space"
       },
       {
-        url: "/attached_assets/20250705_103901_1751716360877.jpg",
+        url: "/images/20250705_103901_1751716360877.jpg",
         alt: "Boys room with bed and storage",
         description: "Individual bed setup with personal storage and study chair"
       },
       {
-        url: "/attached_assets/20250705_103916_1751716360877.jpg",
+        url: "/images/20250705_103916_1751716360877.jpg",
         alt: "Multi-bed boys accommodation",
         description: "Multiple bed arrangement with personal wardrobes and study areas"
       },
       {
-        url: "/attached_assets/20250705_104258_1751716360877.jpg",
+        url: "/images/20250705_104258_1751716360877.jpg",
         alt: "Boys room with shared facilities",
         description: "Shared accommodation with individual beds and personal storage space"
       },
       {
-        url: "/attached_assets/20250705_104552_1751716360877.jpg",
+        url: "/images/20250705_104552_1751716360877.jpg",
         alt: "Outdoor recreation area",
         description: "Outdoor space with recreational facilities and green surroundings"
       },
       {
-        url: "/attached_assets/20250705_104754_1751716360877.jpg",
+        url: "/images/20250705_104754_1751716360877.jpg",
         alt: "Modern boys room with amenities",
         description: "Well-furnished room with modern amenities and comfortable living setup"
       }
