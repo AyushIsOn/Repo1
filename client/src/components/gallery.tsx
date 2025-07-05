@@ -35,24 +35,34 @@ const galleryData = [
     title: "Avni Girls 2 Rooms",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1631947430066-48c30d57b943?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Triple sharing room layout",
-        description: "Triple sharing with organized layout and storage"
+        url: "/images/20250705_112050_1751727258654.jpg",
+        alt: "Water heater facilities",
+        description: "Modern geyser installation for hot water availability"
       },
       {
-        url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+        url: "/images/20250705_112137_1751727258654.jpg",
+        alt: "Study room with furniture",
+        description: "Dedicated study space with table, chair and storage cabinet"
+      },
+      {
+        url: "/images/20250705_112151_1751727258654.jpg",
+        alt: "Girls room with personal space",
+        description: "Individual room with study table, wardrobe and personal amenities"
+      },
+      {
+        url: "/images/20250705_112450_1751727285725.jpg",
+        alt: "Shared accommodation for girls",
+        description: "Comfortable shared room with individual beds and study areas"
+      },
+      {
+        url: "/images/20250705_112846_1751727285725.jpg",
+        alt: "Girls room with natural light",
+        description: "Well-lit room with window, bed and personal storage space"
+      },
+      {
+        url: "/images/20250705_113024_1751727285725.jpg",
         alt: "Common kitchen facilities",
-        description: "Common kitchen with modern appliances and storage"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Single room with cooling",
-        description: "Single room with air cooler and dedicated study area"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-        alt: "Balcony relaxation area",
-        description: "Balcony area for relaxation and fresh air"
+        description: "Shared kitchen with cooking facilities, water storage and appliances"
       }
     ]
   },
