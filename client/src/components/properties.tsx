@@ -14,7 +14,7 @@ const properties = [
     name: "Avni Girls 2",
     description: "Spacious rooms with attached bathrooms and common areas for socializing and studying.",
     capacity: "Female Only",
-    image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+    image: "/images/20250705_104903_1751728288595.jpg"
   },
   {
     id: 3,
