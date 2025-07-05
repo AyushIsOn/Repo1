@@ -1,5 +1,12 @@
 import { MapPin, Bus, ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Location() {
   return (
@@ -69,7 +76,63 @@ export default function Location() {
           <h3 className="text-3xl font-bold text-neutral-900 mb-8 text-center">
             Distance to Key Places in Jhansi
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          {/* Mobile Carousel */}
+          <div className="md:hidden">
+            <Carousel className="w-full max-w-sm mx-auto">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="overflow-hidden border-0 shadow-sm">
+                    <CardContent className="p-0">
+                      <img 
+                        src="/images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.jpeg"
+                        alt="Distance and time to key locations from Avni PG"
+                        className="w-full h-auto object-cover"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="overflow-hidden border-0 shadow-sm">
+                    <CardContent className="p-0">
+                      <img 
+                        src="/images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.jpeg"
+                        alt="Travel time to important places in Jhansi"
+                        className="w-full h-auto object-cover"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="overflow-hidden border-0 shadow-sm">
+                    <CardContent className="p-0">
+                      <img 
+                        src="/images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.jpeg"
+                        alt="Distance information to colleges and institutions"
+                        className="w-full h-auto object-cover"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="overflow-hidden border-0 shadow-sm">
+                    <CardContent className="p-0">
+                      <img 
+                        src="/images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.jpeg"
+                        alt="Travel times to shopping and commercial areas"
+                        className="w-full h-auto object-cover"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+
+          {/* Desktop Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="overflow-hidden border-0 shadow-sm">
               <CardContent className="p-0">
                 <img 

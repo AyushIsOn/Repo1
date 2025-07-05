@@ -109,6 +109,7 @@ Changelog:
 - July 05, 2025: Added distance and time information to key places in Jhansi below location section
 - July 05, 2025: Added authentic exterior building image to Avni Girls 2 property card
 - July 05, 2025: Added authentic building images to Avni Girls 1 and Avni Boys properties, changed aspect ratio to portrait (3:4) to prevent cropping
+- July 05, 2025: Made distance to key places section responsive with carousel for mobile and grid for desktop
 ```
 
 ## User Preferences
