@@ -71,37 +71,36 @@ const galleryData = [
         url: "/optimized-images/20250705_112050_1751727258654.webp",
         alt: "Water heater facilities",
         description: "Modern geyser installation for hot water availability",
-        rotation: 90
+        rotation: -90
       },
       {
         url: "/optimized-images/20250705_112137_1751727258654.webp",
         alt: "Study room with furniture",
         description: "Dedicated study space with table, chair and storage cabinet",
-        rotation: 90
+        rotation: -90
       },
       {
         url: "/optimized-images/20250705_112151_1751727258654.webp",
         alt: "Girls room with personal space",
         description: "Individual room with study table, wardrobe and personal amenities",
-        rotation: 90
+        rotation: -90
       },
       {
         url: "/optimized-images/20250705_112450_1751727285725.webp",
         alt: "Shared accommodation for girls",
         description: "Comfortable shared room with individual beds and study areas",
-        rotation: 90
+        rotation: -90
       },
       {
         url: "/optimized-images/20250705_112846_1751727285725.webp",
         alt: "Girls room with natural light",
         description: "Well-lit room with window, bed and personal storage space",
-        rotation: 90
+        rotation: -90
       },
       {
         url: "/optimized-images/20250705_113024_1751727285725.webp",
         alt: "Common kitchen facilities",
-        description: "Shared kitchen with cooking facilities, water storage and appliances",
-        rotation: 90
+        description: "Shared kitchen with cooking facilities, water storage and appliances"
       }
     ]
   },

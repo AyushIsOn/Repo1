@@ -64,6 +64,7 @@ export default function Properties() {
                   disableRightClick={true}
                   disableDownload={true}
                   priority={property.id === 1}
+                  rotation={property.id === 2 ? -90 : 0}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
