@@ -8,21 +8,21 @@ const properties = [
     name: "Avni Girls 1",
     description: "Premium accommodation for female students with modern amenities and 24/7 security.",
     capacity: "Female Only",
-    image: "/images/2023-07-14_1751728409526.jpg"
+    image: "/webp-images/2023-07-14_1751728409526.webp"
   },
   {
     id: 2,
     name: "Avni Girls 2",
     description: "Spacious rooms with attached bathrooms and common areas for socializing and studying.",
     capacity: "Female Only",
-    image: "/images/20250705_104903_1751728288595.jpg"
+    image: "/webp-images/20250705_104903_1751728288595.webp"
   },
   {
     id: 3,
     name: "Avni Boys",
     description: "Comfortable accommodation for male students with all necessary facilities and study environment.",
     capacity: "Male Only",
-    image: "/images/20250705_113142_1751728478634.jpg"
+    image: "/webp-images/20250705_113142_1751728478634.webp"
   }
 ];
 

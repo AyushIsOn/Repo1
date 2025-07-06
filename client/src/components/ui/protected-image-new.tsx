@@ -9,7 +9,6 @@ interface ProtectedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> 
   disableRightClick?: boolean;
   disableDownload?: boolean;
   watermark?: string;
-  rotation?: number;
 }
 
 export function ProtectedImage({ 
@@ -20,12 +19,26 @@ export function ProtectedImage({
   disableRightClick = true,
   disableDownload = true,
   watermark,
-  rotation,
   ...props 
 }: ProtectedImageProps) {
   const [imgSrc, setImgSrc] = useState(src);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
+  // Convert image path to use webp-images folder
+  const getWebPSrc = (originalSrc: string) => {
+    // If it's already a webp-images path, return as is
+    if (originalSrc.includes('/webp-images/')) {
+      return originalSrc;
+    }
+    
+    // Convert /images/filename.ext to /webp-images/filename.webp
+    const webpSrc = originalSrc
+      .replace('/images/', '/webp-images/')
+      .replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    
+    return webpSrc;
+  };
 
   const handleImageLoad = () => {
     setIsLoading(false);
@@ -36,9 +49,12 @@ export function ProtectedImage({
     setIsLoading(false);
     setHasError(true);
     
-    // Try fallback if provided
-    if (fallbackSrc && imgSrc !== fallbackSrc) {
-      setImgSrc(fallbackSrc);
+    // Try fallback to original format if WebP fails
+    if (imgSrc.includes('/webp-images/')) {
+      const originalSrc = imgSrc
+        .replace('/webp-images/', '/images/')
+        .replace('.webp', '.jpg');
+      setImgSrc(fallbackSrc || originalSrc);
     }
   };
 
@@ -64,6 +80,7 @@ export function ProtectedImage({
       )}
       
       <picture>
+        <source srcSet={getWebPSrc(src)} type="image/webp" />
         <img
           {...props}
           src={imgSrc}
@@ -86,7 +103,6 @@ export function ProtectedImage({
             userSelect: disableDownload ? 'none' : 'auto',
             WebkitUserSelect: disableDownload ? 'none' : 'auto',
             MozUserSelect: disableDownload ? 'none' : 'auto',
-            transform: rotation ? `rotate(${rotation}deg)` : undefined,
           } as React.CSSProperties}
         />
       </picture>

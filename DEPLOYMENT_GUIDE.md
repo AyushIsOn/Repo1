@@ -149,3 +149,7 @@ GitHub will automatically rebuild and redeploy!
 ---
 
 **Your PG Hostel website is professional, fast, and ready for the world! 🌟**
+cd /Users/izhu/Downloads/PgHostelTracker
+git add .
+git commit -m "Complete Avni PG Hostel website"
+git push -u origin main
