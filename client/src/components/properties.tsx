@@ -59,7 +59,9 @@ export default function Properties() {
                 <ProtectedImage
                   src={property.image} 
                   alt={`${property.name} Building`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
+                    property.image.includes('20250705_104903_1751728288595.jpg') ? 'rotate-90' : ''
+                  }`}
                   watermark="Avni PG"
                   disableRightClick={true}
                   disableDownload={true}
