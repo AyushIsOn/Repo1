@@ -16,14 +16,14 @@ const properties = [
     name: "Avni Girls 2",
     description: "Spacious rooms with attached bathrooms and common areas for socializing and studying.",
     capacity: "Female Only",
-    image: "/webp-images/Avni_2.webp"
+    image: "/webp-images/Avni_2-2.webp"
   },
   {
     id: 3,
     name: "Avni Boys",
     description: "Comfortable accommodation for male students with all necessary facilities and study environment.",
     capacity: "Male Only",
-    image: "/webp-images/Avni_3.webp"
+    image: "/webp-images/Avni_3-2.webp"
   }
 ];
 
