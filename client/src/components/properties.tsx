@@ -15,7 +15,7 @@ const properties = [
     name: "Avni Girls 2",
     description: "Spacious rooms with attached bathrooms and common areas for socializing and studying.",
     capacity: "Female Only",
-    image: "/images/20250705_104903_1751728288595.jpg"
+    image: "/images/avni-girls-2-building.jpg"
   },
   {
     id: 3,
@@ -59,11 +59,7 @@ export default function Properties() {
                 <ProtectedImage
                   src={property.image} 
                   alt={`${property.name} Building`}
-                  className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
-                    property.image.includes('20250705_104903_1751728288595.jpg') 
-                      ? 'rotate-90 scale-150' 
-                      : ''
-                  }`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   watermark="Avni PG"
                   disableRightClick={true}
                   disableDownload={true}
