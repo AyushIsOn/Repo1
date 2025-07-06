@@ -127,11 +127,18 @@ const amenities = [
     color: "bg-secondary"
   },
   {
+    id: 18,
+    name: "Parking Space",
+    description: "Secure parking for bikes and cars",
+    icon: Car,
+    color: "bg-accent"
+  },
+  {
     id: 16,
     name: "CCTV Cameras",
     description: "24/7 security monitoring",
     icon: Camera,
-    color: "bg-accent"
+    color: "bg-primary"
   },
   {
     id: 17,
@@ -139,13 +146,6 @@ const amenities = [
     description: "Temple and park right behind the house",
     icon: TreePine,
     color: "bg-primary"
-  },
-  {
-    id: 18,
-    name: "Parking Space",
-    description: "Secure parking for bikes and cars",
-    icon: Car,
-    color: "bg-secondary"
   }
 ];
 
