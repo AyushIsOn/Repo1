@@ -29,7 +29,8 @@ export default defineConfig({
     emptyOutDir: true,
     assetsDir: "assets",
   },
-  base: process.env.NODE_ENV === "production" ? "/Repo1/" : "/",
+  base: process.env.NODE_ENV === "production" ? 
+    (process.env.NETLIFY ? "/" : "/Repo1/") : "/",
   server: {
     fs: {
       strict: true,
