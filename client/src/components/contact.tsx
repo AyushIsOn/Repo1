@@ -90,6 +90,12 @@ export default function Contact() {
                 Alternate - 83180 10062
               </a>
             </Button>
+            
+            <div className="text-center">
+              <p className="text-neutral-400 text-sm italic">
+                ⚠️ Do not Call After 9PM in the night
+              </p>
+            </div>
           </div>
         </div>
       </div>
