@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ResponsiveImage } from "@/components/ui/responsive-image";
+import { ProtectedImage } from "@/components/ui/protected-image";
 import { Users, ArrowRight } from "lucide-react";
 
 // Updated with custom property images
@@ -57,15 +57,13 @@ export default function Properties() {
           {properties.map((property) => (
             <Card key={property.id} className="overflow-hidden border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-[3/4] overflow-hidden">
-                <ResponsiveImage
+                <ProtectedImage
                   src={property.image} 
                   alt={`${property.name} Building`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   watermark="Avni PG"
                   disableRightClick={true}
                   disableDownload={true}
-                  priority={property.id === 1}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <CardContent className="p-8">
