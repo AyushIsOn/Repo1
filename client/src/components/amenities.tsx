@@ -16,7 +16,8 @@ import {
   Battery,
   Wifi,
   Camera,
-  TreePine
+  TreePine,
+  Car
 } from "lucide-react";
 
 const amenities = [
@@ -138,6 +139,13 @@ const amenities = [
     description: "Temple and park right behind the house",
     icon: TreePine,
     color: "bg-primary"
+  },
+  {
+    id: 18,
+    name: "Parking Space",
+    description: "Secure parking for bikes and cars",
+    icon: Car,
+    color: "bg-secondary"
   }
 ];
 
