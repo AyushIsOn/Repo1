@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ProtectedImage } from "@/components/ui/protected-image";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { Users, ArrowRight } from "lucide-react";
 
 const properties = [
@@ -8,21 +8,21 @@ const properties = [
     name: "Avni Girls 1",
     description: "Premium accommodation for female students with modern amenities and 24/7 security.",
     capacity: "Female Only",
-    image: "/webp-images/2023-07-14_1751728409526.webp"
+    image: "/optimized-images/2023-07-14_1751728409526.webp"
   },
   {
     id: 2,
     name: "Avni Girls 2",
     description: "Spacious rooms with attached bathrooms and common areas for socializing and studying.",
     capacity: "Female Only",
-    image: "/webp-images/20250705_104903_1751728288595.webp"
+    image: "/optimized-images/20250705_104903_1751728288595.webp"
   },
   {
     id: 3,
     name: "Avni Boys",
     description: "Comfortable accommodation for male students with all necessary facilities and study environment.",
     capacity: "Male Only",
-    image: "/webp-images/20250705_113142_1751728478634.webp"
+    image: "/optimized-images/20250705_113142_1751728478634.webp"
   }
 ];
 
@@ -56,13 +56,15 @@ export default function Properties() {
           {properties.map((property) => (
             <Card key={property.id} className="overflow-hidden border-0 shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-[3/4] overflow-hidden">
-                <ProtectedImage
+                <ResponsiveImage
                   src={property.image} 
                   alt={`${property.name} Building`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   watermark="Avni PG"
                   disableRightClick={true}
                   disableDownload={true}
+                  priority={property.id === 1}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <CardContent className="p-8">

@@ -174,7 +174,7 @@ export default function Amenities() {
                       </div>
                       <div>
                         <ProtectedImage
-                          src="/webp-images/cctv-new.webp" 
+                          src="/optimized-images/cctv-new.webp" 
                           alt="CCTV Monitoring System" 
                           className="rounded-lg w-full h-40 object-cover"
                           watermark="Avni PG"
@@ -203,7 +203,7 @@ export default function Amenities() {
                       </div>
                       <div>
                         <ProtectedImage
-                          src="/webp-images/mandir-park-correct.webp" 
+                          src="/optimized-images/mandir-park-correct.webp" 
                           alt="Temple and Park behind the PG house" 
                           className="rounded-lg w-full h-40 object-cover"
                           watermark="Avni PG"
