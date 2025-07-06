@@ -26,9 +26,6 @@ jobs:
         # Install sqlite3 for build process if needed
         npm install better-sqlite3 --no-save
       
-    - name: Convert images to WebP
-      run: npm run convert-images
-      
     - name: Build static site
       run: npm run build:static
       
