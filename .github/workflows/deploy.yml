@@ -21,7 +21,10 @@ jobs:
         cache: 'npm'
         
     - name: Install dependencies
-      run: npm ci
+      run: |
+        npm ci
+        # Install sqlite3 for build process if needed
+        npm install better-sqlite3 --no-save
       
     - name: Convert images to WebP
       run: npm run convert-images
@@ -32,9 +35,9 @@ jobs:
     - name: Fix GitHub Pages paths
       run: |
         # Update HTML base path and asset paths for GitHub Pages
-        sed -i 's|<base href="/">|<base href="/AvniPG/">|g' dist/index.html
-        sed -i 's|href="/assets/|href="/AvniPG/assets/|g' dist/index.html
-        sed -i 's|src="/assets/|src="/AvniPG/assets/|g' dist/index.html
+        sed -i 's|<base href="/">|<base href="/Hostel/">|g' dist/index.html
+        sed -i 's|href="/assets/|href="/Hostel/assets/|g' dist/index.html
+        sed -i 's|src="/assets/|src="/Hostel/assets/|g' dist/index.html
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
