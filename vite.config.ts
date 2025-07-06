@@ -29,7 +29,7 @@ export default defineConfig({
     emptyOutDir: true,
     assetsDir: "assets",
   },
-  base: process.env.NODE_ENV === "production" ? "/Hostel/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/Repo1/" : "/",
   server: {
     fs: {
       strict: true,

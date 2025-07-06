@@ -35,9 +35,10 @@ jobs:
     - name: Fix GitHub Pages paths
       run: |
         # Update HTML base path and asset paths for GitHub Pages
-        sed -i 's|<base href="/">|<base href="/Hostel/">|g' dist/index.html
-        sed -i 's|href="/assets/|href="/Hostel/assets/|g' dist/index.html
-        sed -i 's|src="/assets/|src="/Hostel/assets/|g' dist/index.html
+        sed -i 's|<base href="/">|<base href="/Repo1/">|g' dist/index.html
+        sed -i 's|href="/assets/|href="/Repo1/assets/|g' dist/index.html
+        sed -i 's|src="/assets/|src="/Repo1/assets/|g' dist/index.html
+        sed -i 's|/webp-images/|/Repo1/webp-images/|g' dist/index.html
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
