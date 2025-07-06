@@ -120,6 +120,13 @@ Changelog:
   • Added terrace image to Avni Boys gallery showing panoramic city view
   • Added 3-seater room image to Avni Girls 1 gallery with park and mandir access description
   • Implemented comprehensive fraud warning notice above footer alerting users about cyber fraudsters and fake Google Maps listings
+- July 06, 2025: Fixed image orientation issues with Avni Girls 2 building photo through 180-degree rotation
+- July 06, 2025: Prepared complete GitHub Pages deployment package:
+  • Created automated GitHub Actions workflow for deployment
+  • Set up WebP image optimization pipeline
+  • Configured proper base paths for GitHub Pages hosting
+  • Created comprehensive deployment documentation
+  • Prepared project for https://github.com/AyushIsOn/AvniPG.git repository
 ```
 
 ## User Preferences
