@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { Users, ArrowRight } from "lucide-react";
 
+// Updated with custom property images
 const properties = [
   {
     id: 1,
