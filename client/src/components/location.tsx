@@ -26,7 +26,7 @@ export default function Location() {
             <CardContent className="p-0">
               <div className="h-80 overflow-hidden bg-gray-50 flex items-center justify-center">
                 <ProtectedImage
-                  src="/optimized-images/Girls - 1_1751727828946.webp" 
+                  src="/webp-images/Girls - 1_1751727828946.webp" 
                   alt="Google Maps showing locations of all three Avni PG buildings"
                   className="w-full h-full object-contain"
                   watermark="Avni PG"
@@ -104,7 +104,7 @@ export default function Location() {
                   <Card className="overflow-hidden border-0 shadow-sm">
                     <CardContent className="p-0">
                       <ProtectedImage
-                        src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.webp"
+                        src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.webp"
                         alt="Distance and time to key locations from Avni PG"
                         className="w-full h-auto object-cover"
                         watermark="Avni PG"
@@ -118,7 +118,7 @@ export default function Location() {
                   <Card className="overflow-hidden border-0 shadow-sm">
                     <CardContent className="p-0">
                       <ProtectedImage
-                        src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.webp"
+                        src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.webp"
                         alt="Travel time to important places in Jhansi"
                         className="w-full h-auto object-cover"
                         watermark="Avni PG"
@@ -132,7 +132,7 @@ export default function Location() {
                   <Card className="overflow-hidden border-0 shadow-sm">
                     <CardContent className="p-0">
                       <ProtectedImage
-                        src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.webp"
+                        src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.webp"
                         alt="Distance information to colleges and institutions"
                         className="w-full h-auto object-cover"
                         watermark="Avni PG"
@@ -146,7 +146,7 @@ export default function Location() {
                   <Card className="overflow-hidden border-0 shadow-sm">
                     <CardContent className="p-0">
                       <ProtectedImage
-                        src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.webp"
+                        src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.webp"
                         alt="Travel times to shopping and commercial areas"
                         className="w-full h-auto object-cover"
                         watermark="Avni PG"
@@ -167,7 +167,7 @@ export default function Location() {
             <Card className="overflow-hidden border-0 shadow-sm">
               <CardContent className="p-0">
                 <img 
-                  src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.webp"
+                  src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.55 PM (1)_1751728025300.webp"
                   alt="Distance and time to key locations from Avni PG"
                   className="w-full h-auto object-cover"
                 />
@@ -176,7 +176,7 @@ export default function Location() {
             <Card className="overflow-hidden border-0 shadow-sm">
               <CardContent className="p-0">
                 <img 
-                  src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.webp"
+                  src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.55 PM_1751728025300.webp"
                   alt="Travel time to important places in Jhansi"
                   className="w-full h-auto object-cover"
                 />
@@ -185,7 +185,7 @@ export default function Location() {
             <Card className="overflow-hidden border-0 shadow-sm">
               <CardContent className="p-0">
                 <img 
-                  src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.webp"
+                  src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.56 PM (1)_1751728025300.webp"
                   alt="Distance information to colleges and institutions"
                   className="w-full h-auto object-cover"
                 />
@@ -194,7 +194,7 @@ export default function Location() {
             <Card className="overflow-hidden border-0 shadow-sm">
               <CardContent className="p-0">
                 <img 
-                  src="/optimized-images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.webp"
+                  src="/webp-images/WhatsApp Image 2025-07-05 at 12.49.56 PM_1751728025300.webp"
                   alt="Travel times to shopping and commercial areas"
                   className="w-full h-auto object-cover"
                 />
