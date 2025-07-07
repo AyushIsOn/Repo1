@@ -7,17 +7,17 @@ export default function Contact() {
   const whatsappUrl = `https://wa.me/919795204621?text=${whatsappMessage}`;
 
   return (
-    <section id="contact" className="py-20 bg-neutral-900">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+    <section id="contact" className="py-12 md:py-20 bg-neutral-900">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+        <div className="mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Move In?</h2>
           <p className="text-xl text-neutral-300 max-w-2xl">
             Get in touch with us to secure your comfortable stay at Avni PG.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+          <div className="space-y-6 md:space-y-8">
             <div className="flex items-start space-x-4">
               <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-neutral-900" />
@@ -59,23 +59,23 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <Button 
               asChild
-              className="bg-white text-neutral-900 hover:bg-neutral-100 px-8 py-4 text-lg font-medium w-full rounded-full"
+              className="bg-white text-neutral-900 hover:bg-neutral-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium w-full rounded-full"
             >
               <a href="tel:+919795204621">
-                <Phone className="w-5 h-5 mr-3" />
+                <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2 md:mr-3" />
                 Call Now - 97952 04621
               </a>
             </Button>
             
             <Button 
               asChild
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-medium w-full rounded-full"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium w-full rounded-full"
             >
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp mr-3"></i>
+                <i className="fab fa-whatsapp mr-2 md:mr-3"></i>
                 Message to WhatsApp
               </a>
             </Button>
@@ -83,10 +83,10 @@ export default function Contact() {
             <Button 
               asChild
               variant="outline"
-              className="border-neutral-700 text-white hover:bg-neutral-800 hover:text-white px-8 py-4 text-lg font-medium w-full rounded-full bg-neutral-700"
+              className="border-neutral-700 text-white hover:bg-neutral-800 hover:text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium w-full rounded-full bg-neutral-700"
             >
               <a href="tel:+918318010062">
-                <Phone className="w-5 h-5 mr-3" />
+                <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2 md:mr-3" />
                 Alternate - 83180 10062
               </a>
             </Button>
